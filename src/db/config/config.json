@@ -25,6 +25,6 @@
     "dialect": "postgres",
     "logging": false,
     "operatorsAliases": false,
-    "use_env_variable": "postgresql-asymmetrical-48003"
+    "use_env_variable": "postgres://ewaytxpnhmcedw:660b2ef1402f20938e8aee04e71b5d98531cffd2a7b4097b6b0e202df2896303@ec2-50-17-231-192.compute-1.amazonaws.com:5432/db7nc6hagj7mu8"
   }
 }
