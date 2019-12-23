@@ -7,6 +7,7 @@ const Topic = require("../../src/db/models").Topic;
 
 describe("routes : topics", () => {
 
+
   beforeEach((done) => {
     this.topic;
     sequelize.sync({force: true}).then((res) => {
@@ -91,6 +92,7 @@ describe("routes : topics", () => {
   });
 
   describe("GET /topics/:id/edit", () => {
+    //when removing the done above, it no longer times out
 
     it("should render a view with an edit topic form", (done) => {
       request.get(`${base}${this.topic.id}/edit`, (err, res, body) => {
@@ -115,7 +117,7 @@ describe("routes : topics", () => {
       };
 
       request.post(options, (err, res, body) => {
-        
+
         expect(err).toBeNull();
 
         Topic.findOne({
